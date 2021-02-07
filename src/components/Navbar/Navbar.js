@@ -6,7 +6,7 @@ import 'semantic-ui-css/semantic.min.css';
 function Navbar () {
 
     return (
-        <Menu fixed='top' >
+        <Menu fixed='top' inverted pointing>
             <Container>
                 <Menu.Item as='a' header>
                     <Image size='mini' src='https://semantic-ui.com/examples/assets/images/logo.png' />

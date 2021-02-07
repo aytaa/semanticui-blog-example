@@ -1,23 +1,49 @@
 import React from 'react';
-import {Container, Header, Image} from "semantic-ui-react";
+import {Container, Grid, Segment, Image , Card , Icon} from "semantic-ui-react";
 
 function Home () {
     return (
-        <Container text style={{ marginTop: '7em' }}>
-            <Header as='h1'>Semantic UI React Fixed Template</Header>
-            <p>This is a basic fixed menu template using fixed size containers.</p>
-            <p>
-                A text container is used for the main container, which is useful for single column layouts.
-            </p>
-
-            <Image src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' style={{ marginTop: '2em' }} />
-            <Image src='https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-            <Image src='https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-            <Image src='https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-            <Image src='https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-            <Image src='https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
-            <Image src='https://semantic-ui.com/examples/assets/images/wireframe/paragraph.png' style={{ marginTop: '2em' }} />
+        <Container style={{ marginTop: '7em' }}>
+            <Grid columns='equal'>
+                <Grid.Row stretched>
+                    <Grid.Column>
+                        <Card>
+                            <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' />
+                        </Card>
+                        <Segment>
+                            <Card>
+                                <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' />
+                            </Card>
+                        </Segment>
+                    </Grid.Column>
+                    <Grid.Column width={8}>
+                        <Segment>
+                            <Card fluid={true}>
+                                <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
+                                <Card.Content>
+                                    <Card.Header>Daniel</Card.Header>
+                                    <Card.Meta>Joined in 2016</Card.Meta>
+                                    <Card.Description>
+                                        Daniel is a comedian living in Nashville.
+                                    </Card.Description>
+                                </Card.Content>
+                                <Card.Content extra>
+                                    <a>
+                                        <Icon name='user' />
+                                        10 Friends
+                                    </a>
+                                </Card.Content>
+                            </Card>
+                        </Segment>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Segment>1</Segment>
+                        <Segment>2</Segment>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
         </Container>
+
     );
 }
 
