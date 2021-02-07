@@ -2,6 +2,7 @@ import React from 'react';
 import {Container , Image, Menu, Input, Button, Icon } from 'semantic-ui-react';
 import UserTrigger from "./UserTrigger";
 import 'semantic-ui-css/semantic.min.css';
+import { NavLink } from "react-router-dom";
 
 function Navbar () {
 
@@ -9,16 +10,23 @@ function Navbar () {
         <Menu fixed='top'>
             <Container>
                 <Menu.Item as='a' header>
-                    <Image size='mini' src='https://semantic-ui.com/examples/assets/images/logo.png' />
+                    <NavLink to="/" >
+                        <Image size='mini' src='https://semantic-ui.com/examples/assets/images/logo.png' />
+                    </NavLink>
                 </Menu.Item>
                 <Menu.Item>
                     <Input icon='search' placeholder='Search...' />
                 </Menu.Item>
                 <Menu.Menu position='right'>
                     <Menu.Item>
-                        <Button style={{ marginRight: '3px' }} basic>Login</Button>
-                        <Button primary>Create Account</Button>
+                        <NavLink to="/signin" >
+                            <Button style={{ marginRight: '3px' }} basic>Login</Button>
+                        </NavLink>
+                        <NavLink to="/signup" >
+                            <Button color="teal">Create Account</Button>
+                        </NavLink>
                         <Icon name='bell outline' size="big"/>
+                        <Icon name='plug' size="big"/>
                     </Menu.Item>
                     <Menu.Item>
                         <UserTrigger />
