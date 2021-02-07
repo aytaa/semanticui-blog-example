@@ -22,11 +22,15 @@ function Navbar () {
                         <NavLink to="/signin" >
                             <Button style={{ marginRight: '3px' }} basic>Login</Button>
                         </NavLink>
-                        <NavLink to="/signup" >
+                        <NavLink to="/signup">
                             <Button color="teal">Create Account</Button>
                         </NavLink>
-                        <Icon name='bell outline' size="big"/>
-                        <Icon name='plug' size="big"/>
+                        <NavLink to="/notifications" >
+                            <Icon name='bell outline' color="black" size="big"/>
+                        </NavLink>
+                        <NavLink to="/messages">
+                            <Icon name='plug' color="black" size="big"/>
+                        </NavLink>
                     </Menu.Item>
                     <Menu.Item>
                         <UserTrigger />

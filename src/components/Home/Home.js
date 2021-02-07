@@ -25,8 +25,12 @@ function Home () {
                         </Card>
                     </Grid.Column>
                     <Grid.Column width={8}>
-                        <Card style={{ backgroundColor: 'white' }} fluid={true}>
-                            <Image style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }} src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
+                        <Card href='/example-post' style={{ backgroundColor: 'white' }} fluid={true}>
+                            <Image
+                                style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }}
+                                src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg'
+                                wrapped ui={false}
+                            />
                             <Card.Content>
                                 <Card.Header>Matthew</Card.Header>
                                 <Card.Meta>
@@ -203,7 +207,6 @@ function Home () {
                 </Ref>
             </Grid>
         </Container>
-
     );
 }
 
