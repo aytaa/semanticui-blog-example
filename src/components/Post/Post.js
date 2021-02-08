@@ -15,6 +15,7 @@ import {
 } from "semantic-ui-react";
 import { loremIpsum } from 'react-lorem-ipsum';
 import {NavLink} from "react-router-dom";
+import Comments from './Comments';
 
 const options = [
     { key: 1, text: 'Share to Facebook', icon:'facebook square', value: 1 },
@@ -46,6 +47,7 @@ function Post () {
                                     <Menu floated='right' style={{ border: 'none' , borderStyle: 'none'}}>
                                         <Dropdown
                                             options={options}
+                                            floated="left"
                                             simple
                                             item
                                             trigger={trigger}
@@ -61,22 +63,15 @@ function Post () {
                                     <Card.Header>Bob Smith</Card.Header>
                                     <Card.Meta>Full Stack Developer</Card.Meta>
                                     <Card.Description>
-                                        {loremIpsum({ p: 10 }).map(text => (
-                                            <div className="text" key={text}>
+                                        {loremIpsum({ p: 6 }).map(text => (
+                                            <p className="text" key={text}>
                                                 {text}
-                                            </div>
+                                            </p>
                                         ))}
                                     </Card.Description>
                                 </Card.Content>
                                 <Card.Content extra>
-                                    <a style={{ marginRight: '10px' }}>
-                                        <Icon name='like'/>
-                                        10
-                                    </a>
-                                    <a>
-                                        <Icon name='comments' />
-                                        8
-                                    </a>
+                                    <Comments />
                                 </Card.Content>
                             </Card>
                         </Grid.Column>
