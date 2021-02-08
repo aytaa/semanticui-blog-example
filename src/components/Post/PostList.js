@@ -5,9 +5,7 @@ import { GiQueenCrown } from 'react-icons/gi';
 function PostList () {
     return (
         <Grid.Column width={8}>
-
                 <Card href='/example-post' style={{ backgroundColor: 'white' }} fluid={true}>
-
                     <Image
                         style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }}
                         src='https://res.cloudinary.com/practicaldev/image/fetch/s--McVSMcOR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/mxc4y02ny9fyd0mv7iw7.jpg'
@@ -34,7 +32,7 @@ function PostList () {
                     </Card.Content>
                     <Card.Content extra>
                         <a style={{ marginRight: '10px' }}>
-                            <Icon name="heart outline" />
+                            <Icon name="like" />
                             10
                         </a>
                         <a style={{ marginRight: '10px' }}>
@@ -86,6 +84,17 @@ function PostList () {
                 </Card.Content>
             </Card>
             <Card style={{ backgroundColor: 'white' }} fluid={true}>
+                <Image
+                    style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }}
+                    src='https://res.cloudinary.com/practicaldev/image/fetch/s--FqmSoG5d--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/ap2z5u4t0884bulzvg85.png'
+                    wrapped ui={true}
+                />
+                <Label
+                    attached='top right'
+                    color='teal'
+                >
+                    #trend
+                </Label>
                 <Card.Content>
                     <Image
                         className="ui avatar image"
@@ -96,7 +105,7 @@ function PostList () {
                     <Card.Header>Bob Smith</Card.Header>
                     <Card.Meta>Feb 7 (21 hours ago)</Card.Meta>
                     <Card.Description style={{ color: 'black' }}>
-                        <h1>Daniel is a comedian living in Nashville.</h1>
+                        <h1>Here’s Another List of Exciting Front-End Challenges</h1>
                     </Card.Description>
                 </Card.Content>
                 <Card.Content extra>
