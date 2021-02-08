@@ -1,5 +1,7 @@
 import React, { createRef } from 'react';
-import {Container, Grid, Segment, Image , Card , Icon , Sticky , Ref} from "semantic-ui-react";
+import {Container, Grid, Feed, Image , Card , Icon , Sticky , Ref, Divider, Button} from "semantic-ui-react";
+import RightSide from "./RightSide/RightSide";
+import PostList from "../Post/PostList";
 
 function Home () {
     const contextRef = createRef()
@@ -24,184 +26,55 @@ function Home () {
                             <Image style={{ padding: '10px', borderRadius:'3px' }} src='https://cdn.worldvectorlogo.com/logos/digitalocean.svg' />
                         </Card>
                     </Grid.Column>
-                    <Grid.Column width={8}>
-                        <Card href='/example-post' style={{ backgroundColor: 'white' }} fluid={true}>
-                            <Image
-                                style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }}
-                                src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg'
-                                wrapped ui={false}
-                            />
-                            <Card.Content>
-                                <Card.Header>Matthew</Card.Header>
-                                <Card.Meta>
-                                    <span className='date'>Joined in 2015</span>
-                                </Card.Meta>
-                                <Card.Meta>
-                                    <h1 style={{ color: 'black' }}>Home for JS developers</h1>
-                                </Card.Meta>
-                            </Card.Content>
-                            <Card.Content extra>
-                                <a style={{ marginRight: '10px' }}>
-                                    <Icon name='like'/>
-                                    10
-                                </a>
-                                <a>
-                                    <Icon name='comments' />
-                                    8
-                                </a>
-                            </Card.Content>
-                        </Card>
-                        <Card style={{ backgroundColor: 'white' }} fluid={true}>
-                            <Image style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }} src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
-                            <Card.Content>
-                                <Card.Header>Matthew</Card.Header>
-                                <Card.Meta>
-                                    <span className='date'>Joined in 2015</span>
-                                </Card.Meta>
-                                <Card.Meta>
-                                    <h1 style={{ color: 'black' }}>Home for JS developers</h1>
-                                </Card.Meta>
-                                <Card.Description>
-                                    Daniel is a comedian living in Nashville.
-                                </Card.Description>
-                            </Card.Content>
-                            <Card.Content extra>
-                                <a style={{ marginRight: '10px' }}>
-                                    <Icon name='like'/>
-                                    10
-                                </a>
-                                <a>
-                                    <Icon name='comments' />
-                                    8
-                                </a>
-                            </Card.Content>
-                        </Card>
-                        <Card style={{ backgroundColor: 'white' }} fluid={true}>
-                            <Image style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }} src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
-                            <Card.Content>
-                                <Card.Header>Matthew</Card.Header>
-                                <Card.Meta>
-                                    <span className='date'>Joined in 2015</span>
-                                </Card.Meta>
-                                <Card.Meta>
-                                    <h1 style={{ color: 'black' }}>Home for JS developers</h1>
-                                </Card.Meta>
-                                <Card.Description>
-                                    Daniel is a comedian living in Nashville.
-                                </Card.Description>
-                            </Card.Content>
-                            <Card.Content extra>
-                                <a style={{ marginRight: '10px' }}>
-                                    <Icon name='like'/>
-                                    10
-                                </a>
-                                <a>
-                                    <Icon name='comments' />
-                                    8
-                                </a>
-                            </Card.Content>
-                        </Card>
-                        <Card style={{ backgroundColor: 'white' }} fluid={true}>
-                            <Image style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }} src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
-                            <Card.Content>
-                                <Card.Header>Matthew</Card.Header>
-                                <Card.Meta>
-                                    <span className='date'>Joined in 2015</span>
-                                </Card.Meta>
-                                <Card.Meta>
-                                    <h1 style={{ color: 'black' }}>Home for JS developers</h1>
-                                </Card.Meta>
-                                <Card.Description>
-                                    Daniel is a comedian living in Nashville.
-                                </Card.Description>
-                            </Card.Content>
-                            <Card.Content extra>
-                                <a style={{ marginRight: '10px' }}>
-                                    <Icon name='like'/>
-                                    10
-                                </a>
-                                <a>
-                                    <Icon name='comments' />
-                                    8
-                                </a>
-                            </Card.Content>
-                        </Card>
-                        <Card style={{ backgroundColor: 'white' }} fluid={true}>
-                            <Image style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }} src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
-                            <Card.Content>
-                                <Card.Header>Matthew</Card.Header>
-                                <Card.Meta>
-                                    <span className='date'>Joined in 2015</span>
-                                </Card.Meta>
-                                <Card.Meta>
-                                    <h1 style={{ color: 'black' }}>Home for JS developers</h1>
-                                </Card.Meta>
-                                <Card.Description>
-                                    Daniel is a comedian living in Nashville.
-                                </Card.Description>
-                            </Card.Content>
-                            <Card.Content extra>
-                                <a style={{ marginRight: '10px' }}>
-                                    <Icon name='like'/>
-                                    10
-                                </a>
-                                <a>
-                                    <Icon name='comments' />
-                                    8
-                                </a>
-                            </Card.Content>
-                        </Card>
-                        <Card style={{ backgroundColor: 'white' }} fluid={true}>
-                            <Image style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }} src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
-                            <Card.Content>
-                                <Card.Header>Matthew</Card.Header>
-                                <Card.Meta>
-                                    <span className='date'>Joined in 2015</span>
-                                </Card.Meta>
-                                <Card.Meta>
-                                    <h1 style={{ color: 'black' }}>Home for JS developers</h1>
-                                </Card.Meta>
-                            </Card.Content>
-                            <Card.Content extra>
-                                <a style={{ marginRight: '10px' }}>
-                                    <Icon name='like'/>
-                                    10
-                                </a>
-                                <a>
-                                    <Icon name='comments' />
-                                    8
-                                </a>
-                            </Card.Content>
-                        </Card>
-                        <Card style={{ backgroundColor: 'white' }} fluid={true}>
-                            <Image style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }} src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
-                            <Card.Content>
-                                <Card.Header>Matthew</Card.Header>
-                                <Card.Meta>
-                                    <span className='date'>Joined in 2015</span>
-                                </Card.Meta>
-                                <Card.Meta>
-                                    <h1 style={{ color: 'black' }}>Home for JS developers</h1>
-                                </Card.Meta>
-                                <Card.Description>
-                                    Daniel is a comedian living in Nashville.
-                                </Card.Description>
-                            </Card.Content>
-                            <Card.Content extra>
-                                <a style={{ marginRight: '10px' }}>
-                                    <Icon name='like'/>
-                                    10
-                                </a>
-                                <a>
-                                    <Icon name='comments' />
-                                    8
-                                </a>
-                            </Card.Content>
-                        </Card>
-                    </Grid.Column>
+                    <PostList />
                     <Grid.Column>
-                        <Segment>1</Segment>
-                        <Segment>2</Segment>
+                        <RightSide />
+                        <Card>
+                            <Card.Content>
+                                <Card.Header>
+                                    #jobs
+                                </Card.Header>
+                            </Card.Content>
+                            <Card.Content>
+                                <Feed>
+                                    <Feed.Event>
+                                        <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/jenny.jpg' />
+                                        <Feed.Content>
+                                            <Feed.Date content='1 day ago' />
+                                            <Feed.Summary>
+                                                You added <a>Jenny Hess</a> to your <a>coworker</a> group.
+                                            </Feed.Summary>
+                                        </Feed.Content>
+                                    </Feed.Event>
+                                    <Divider fitted/>
+                                    <Feed.Event>
+                                        <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/molly.png' />
+                                        <Feed.Content>
+                                            <Feed.Date content='3 days ago' />
+                                            <Feed.Summary>
+                                                You added <a>Molly Malone</a> as a friend.
+                                            </Feed.Summary>
+                                        </Feed.Content>
+                                    </Feed.Event>
+                                    <Divider fitted/>
+                                    <Feed.Event>
+                                        <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/elliot.jpg' />
+                                        <Feed.Content>
+                                            <Feed.Date content='4 days ago' />
+                                            <Feed.Summary>
+                                                You added <a>Elliot Baker</a> to your <a>musicians</a> group.
+                                            </Feed.Summary>
+                                        </Feed.Content>
+                                    </Feed.Event>
+                                </Feed>
+                            </Card.Content>
+                            <Card.Content extra>
+                               <Button fluid color="teal" >
+                                   <Icon name="briefcase" />
+                                   Create Job
+                               </Button>
+                            </Card.Content>
+                        </Card>
                     </Grid.Column>
                 </Grid.Row>
                 </Ref>

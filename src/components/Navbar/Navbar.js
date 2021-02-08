@@ -25,6 +25,12 @@ function Navbar () {
                         <NavLink to="/signup">
                             <Button color="teal">Create Account</Button>
                         </NavLink>
+                        <NavLink to="/write">
+                            <Button color="teal">
+                                <Icon name="pencil alternate" />
+                                Write Post
+                            </Button>
+                        </NavLink>
                         <NavLink to="/notifications" >
                             <Icon name='bell outline' color="black" size="big"/>
                         </NavLink>
