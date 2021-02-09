@@ -1,11 +1,10 @@
 import React from 'react';
 import {Card, Grid, Icon, Image, Label , Segment} from "semantic-ui-react";
-import { GiQueenCrown } from 'react-icons/gi';
 
 function PostList () {
     return (
         <Grid.Column width={8}>
-                <Card href='/example-post' style={{ backgroundColor: 'white' }} fluid={true}>
+            <Card href='/example-post' style={{ backgroundColor: 'white' }} fluid={true}>
                     <Image
                         style={{ padding: '5px' , backgroundColor: 'white' , borderRadius: '10px' }}
                         src='https://res.cloudinary.com/practicaldev/image/fetch/s--McVSMcOR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/mxc4y02ny9fyd0mv7iw7.jpg'

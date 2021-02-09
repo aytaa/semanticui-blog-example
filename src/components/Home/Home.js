@@ -11,7 +11,7 @@ function Home () {
             <Grid columns='equal'>
                 <Ref innerRef={contextRef}>
                 <Grid.Row>
-                    <Grid.Column>
+                    <Grid.Column width={4}>
                         <Sticky
                             bottomOffset={80}
                             context={contextRef}
@@ -27,7 +27,7 @@ function Home () {
                         </Card>
                     </Grid.Column>
                     <PostList />
-                    <Grid.Column>
+                    <Grid.Column width={4}>
                         <RightSide />
                         <Card>
                             <Card.Content>

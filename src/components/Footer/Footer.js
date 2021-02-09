@@ -1,61 +1,59 @@
 import React from 'react';
-import {Container, Divider, Grid, Header, Image, List, Segment} from "semantic-ui-react";
+import {Container, Divider, Grid, Header, Image, List, Segment, Icon} from "semantic-ui-react";
 
 function Footer () {
     return (
         <div>
-            <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
+            <Segment tertiary color="teal" vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
                 <Container textAlign='center'>
-                    <Grid divided inverted stackable>
+                    <Grid  stackable>
                         <Grid.Column width={3}>
-                            <Header inverted as='h4' content='Group 1' />
-                            <List link inverted>
-                                <List.Item as='a'>Link One</List.Item>
-                                <List.Item as='a'>Link Two</List.Item>
-                                <List.Item as='a'>Link Three</List.Item>
-                                <List.Item as='a'>Link Four</List.Item>
+                            <List link >
+                                <List.Item >
+                                    Home
+                                </List.Item>
+                                <List.Item as='a'>Jobs</List.Item>
+                                <List.Item as='a'>Sponsors</List.Item>
+                                <List.Item as='a'>About</List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>
-                            <Header inverted as='h4' content='Group 2' />
-                            <List link inverted>
-                                <List.Item as='a'>Link One</List.Item>
-                                <List.Item as='a'>Link Two</List.Item>
-                                <List.Item as='a'>Link Three</List.Item>
-                                <List.Item as='a'>Link Four</List.Item>
+                            <List link >
+                                <List.Item as='a'>Privacy Policy</List.Item>
+                                <List.Item as='a'>F.A.Q</List.Item>
+                                <List.Item as='a'>Term of Use</List.Item>
+                                <List.Item as='a'>Contact</List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={3}>
-                            <Header inverted as='h4' content='Group 3' />
-                            <List link inverted>
-                                <List.Item as='a'>Link One</List.Item>
-                                <List.Item as='a'>Link Two</List.Item>
-                                <List.Item as='a'>Link Three</List.Item>
-                                <List.Item as='a'>Link Four</List.Item>
+                            <List link >
+                                <List.Item as='a'>Read Time</List.Item>
+                                <List.Item as='a'>Videos</List.Item>
+                                <List.Item as='a'>Tags</List.Item>
+                                <List.Item as='a'>Just Do It</List.Item>
                             </List>
                         </Grid.Column>
                         <Grid.Column width={7}>
-                            <Header inverted as='h4' content='Footer Header' />
-                            <p>
-                                Extra space for a call to action inside the footer that could help re-engage users.
+                            <Header  as='h4' content='Node Community - A social networking platform for developers' />
+                            <p color="black">
+                                “If you fear failure, you will never go anywhere.”
                             </p>
                         </Grid.Column>
                     </Grid>
 
-                    <Divider inverted section />
-                    <Image centered size='mini' src='https://semantic-ui.com/examples/assets/images/logo.png' />
-                    <List horizontal inverted divided link size='small'>
-                        <List.Item as='a' href='#'>
-                            Site Map
+                    <Divider />
+                    <List horizontal link size='small'>
+                        <List.Item as='a' href='https://www.github.com'>
+                            <Icon name="github" size="big"/>
                         </List.Item>
-                        <List.Item as='a' href='#'>
-                            Contact Us
+                        <List.Item as='a' href='https://www.facebook.com'>
+                            <Icon name="facebook square" size="big"/>
                         </List.Item>
-                        <List.Item as='a' href='#'>
-                            Terms and Conditions
+                        <List.Item as='a' href='https://www.twitter.com'>
+                            <Icon name="twitter" size="big"/>
                         </List.Item>
-                        <List.Item as='a' href='#'>
-                            Privacy Policy
+                        <List.Item as='a' href='https://www.instagram.com'>
+                            <Icon name="instagram" size="big"/>
                         </List.Item>
                     </List>
                 </Container>
