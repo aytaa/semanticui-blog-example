@@ -2,12 +2,14 @@ import React, { createRef } from 'react';
 import {Container, Grid, Feed, Image , Card , Icon , Sticky , Ref, Divider, Button} from "semantic-ui-react";
 import RightSide from "./RightSide/RightSide";
 import PostList from "../Post/PostList";
+import Title from "../Title/Title";
 
 function Home () {
     const contextRef = createRef()
 
     return (
         <Container style={{ marginTop: '7em' }}>
+            <Title title={'Node Community'} />
             <Grid columns='equal'>
                 <Ref innerRef={contextRef}>
                 <Grid.Row>

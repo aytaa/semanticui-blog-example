@@ -3,15 +3,16 @@ import {Container , Image, Menu, Input, Button, Icon } from 'semantic-ui-react';
 import UserTrigger from "./UserTrigger";
 import 'semantic-ui-css/semantic.min.css';
 import { NavLink } from "react-router-dom";
+import Logo from '../images/crown.svg';
 
 function Navbar () {
 
     return (
         <Menu fixed='top'>
-            <Container>
+            <Container >
                 <Menu.Item as='a' header>
                     <NavLink to="/" >
-                        <Image size='mini' src='https://semantic-ui.com/examples/assets/images/logo.png' />
+                        <Image size='mini' src={Logo} />
                     </NavLink>
                 </Menu.Item>
                 <Menu.Item>

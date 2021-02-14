@@ -27,7 +27,7 @@ function Footer () {
                         </Grid.Column>
                         <Grid.Column width={3}>
                             <List link >
-                                <List.Item as='a'>Read Time</List.Item>
+                                <List.Item as='a' >Read Time</List.Item>
                                 <List.Item as='a'>Videos</List.Item>
                                 <List.Item as='a'>Tags</List.Item>
                                 <List.Item as='a'>Just Do It</List.Item>
